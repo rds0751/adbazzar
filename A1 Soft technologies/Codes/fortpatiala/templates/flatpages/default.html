@@ -1,0 +1,58 @@
+{% extends "base1.html" %}
+{% load static %}
+{% load flatpage_meta_tags %}{% flatpage_meta_tags flatpage %}
+{% block title %}| {{ flatpage.title }}{% endblock %}
+
+
+
+{% block content %}
+
+<!-- Home -->
+        <div  style="background-color: #0a2642;">
+            <br><br><br><br><br><br>
+        </div>
+
+    <div class="home">
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/s/images/about_page.jpg" data-speed="0.8"></div>
+        <div class="home_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="home_content">
+                            <div class="home_title"><h1>{{ flatpage.title }}</h1></div>
+                            <div class="breadcrumbs">
+                                <ul class="d-flex flex-row align-items-center justify-content-start">
+                                    <li><a href="index.html">Home </a></li>
+                                    <li> / </li>
+                                    <li>{{ flatpage.title }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    {{ flatpage.content }}
+                    
+   <div class="cta">
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/cta.jpg' %}" data-speed="0.8"></div>
+        <div class="cta_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cta_content text-center">
+                        <div class="cta_title text-center"><h1>Know More About Fort Patiala and Patiala's Royal History</h1></div>
+                        <div class="cta_text text-center">
+                            <p>
+                                Fort Patiala got Started in 20XX and is successfully managing and serving guest for the last XX Years.
+                            </p>
+                        </div>
+                        <div class="button button_3 cta_button"><a href="#"><span>Know More<img src="{% static 'images/arrow.png' %}" alt=""></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

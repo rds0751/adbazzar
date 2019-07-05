@@ -1,0 +1,154 @@
+ 
+ 
+ /**
+ * 5.0 Who We Are Wrapper Start Here *
+ * -----------------------------------------------------------------------------
+ */
+ 
+ 
+.who_we_are_wrapper{
+	width:100%;
+	margin-top:100px;
+ 		
+	h2{
+		font-size:25px;
+		color:#f5b705;
+	}
+	
+	p{
+		font-size:14px;
+		color:#fff;
+		line-height:27px;
+		font-family:open sans;
+	}
+	
+	.gray_block{
+		background:#f6f6f6;
+		padding: 35px;
+		
+		h2{
+			font-size:22px;
+			color:#1c1c1c;
+			text-transform:uppercase;
+		}
+		
+		p{
+			font-size:14px;
+			color:#818181;
+			line-height:27px;
+			font-family:open sans;
+		}
+		
+			
+			.corner_section{
+				display:block;
+				z-index:999;
+				 
+				.dots:after{
+					position: absolute;
+					content: "";
+					width: 7px;
+					height: 7px;
+					background: #FFF none repeat scroll 0% 0%;
+					border-radius: 100%;
+					left: 7px;
+					bottom: 9px;
+				}
+				.dots:before{
+					position: absolute;
+					content: "";
+					width: 7px;
+					height: 7px;
+					background: #FFF none repeat scroll 0% 0%;
+					border-radius: 100%;
+					right: 7px;
+					top: 9px;
+					z-index:9;
+				}
+			}
+			.corner_section:before {
+				content:"";
+				position:absolute;
+				bottom:0;
+				left:0;
+				width: 0; 
+				height: 0; 
+				border-bottom: 45px solid #f5b705; 
+				border-right: 45px solid transparent;
+			 }
+			 .corner_section:after {
+				content:"";
+				position:absolute;
+				top:0;
+				right:0;
+				width: 0; 
+				height: 0; 
+				border-top: 45px solid #f5b705; 
+				border-left: 45px solid transparent;
+			 }
+	}
+	
+	.nav-tabs > li > a {
+		/*background: #161616 none repeat scroll 0 0;*/
+		border: 1px solid transparent;
+		border-radius: 0px 0px 0 0;
+		color: #000;
+		font-size: 1.5em;
+		line-height: 1.42857;
+		margin-right: 2px;
+		padding:1em 3em;
+		font-weight:700;
+	}
+	.nav-tabs > li > a:hover {
+		background:#f5b705;
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover{
+		background:#f5b705;
+		color:#fff;
+	}
+	
+	.tab-content > .active {
+		color: #8c8b8b;
+		display: block;
+		font-family: open sans;
+		font-size: 1.4em;
+		padding-top: 1em;
+		line-height:2em;
+		visibility: visible;
+	}
+  	.tab-content   h3{
+		font-size:1.2em;
+		color:#161616;
+	}
+ 	
+ }
+ 
+ .panel-default>.panel-heading {
+	  color: #333333 !important;
+	  background-color: #f6f6f6;
+	  border-color: transparent;
+	 } 
+	.panel-heading {
+	  padding: 20px 15px;
+	  border-bottom: 0px solid transparent;
+	  border-top-left-radius: 0px; 
+	  border-top-right-radius: 0px; 
+	}
+	.panel-body p{
+		color:#818181;
+	}
+	.panel-default {
+	  border-color: transparent;
+	}
+	
+	.panel-heading a{
+		color:#333333 !important;
+	}
+	
+.panel {
+	margin-bottom: 20px;
+	background-color: #FFF;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
+}

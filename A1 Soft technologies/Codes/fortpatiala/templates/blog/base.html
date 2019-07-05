@@ -1,0 +1,26 @@
+{% extends 'base1.html' %}
+
+{% block title %}Blog &middot; {{ block.super }}{% endblock %}
+
+{% block content-wrapper %}
+<br><br><br><br><br><br><br>
+  <div class="row">
+    <div class="col-md-9">
+      <div class="blog">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+<div class="col-md-3 col-sm-5">
+      {% block sidebar-right %}
+
+        {% if post_tags %}
+<div class="sidebar-item tag-cloud">
+
+          </div>
+        {% endif %}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}
+                

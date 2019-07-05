@@ -1,0 +1,75 @@
+{% extends "base1.html" %}
+
+{% block title %}Contact Us &middot; {{ block.super }}{% endblock %}
+
+{% block breadcrumb-wrapper %}{% endblock %}
+ 
+{% block content %}
+  <div class="contact">
+
+    <section id="newsletter" class="newsletter text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="main_newsletter sections">
+                        <div class="col-sm-12">
+                            <div class="single_newsletter_head">
+                                <h2>Connect With Us</h2>
+                                <br>
+                            </div>
+
+                            <div class="single_sewsletter_content">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <form method="post">
+      {% csrf_token %}
+
+      <div class="single_sewsletter_content">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <div class="form-group">
+                                            {% include 'includes/_field.html' with field=form.name %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+      <div class="single_sewsletter_content">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <div class="form-group">
+                                            {% include 'includes/_field.html' with field=form.email %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="single_sewsletter_content">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <div class="form-group">
+                                            {% include 'includes/_field.html' with field=form.subject %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="single_sewsletter_content">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <div class="form-group">
+                                            {% include 'includes/_field.html' with field=form.message %}
+                                            <br>
+                                            <input type="submit" value="SUBSCRIBE" class="btn btn-primary"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+      
+    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+  </div>
+{% endblock %}

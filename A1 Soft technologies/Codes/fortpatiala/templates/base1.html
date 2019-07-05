@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fort Patiala | F2G | Wedding Bells</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Confpro template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.3.4/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.3.4/animate.css' %}">
+<link href="{% static 'plugins/colorbox/colorbox.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+</head>
+<body>
+
+    <div class="super_container">
+
+        {% block header %}
+        {% include 'includes/_header.html' %}
+    {% endblock %} 
+    {% include 'includes/_alerts.html' %}
+          {% block content-wrapper %}
+            {% block content %}
+
+
+            <!-- Home -->
+
+    <div class="home">
+        <div  style="background-color: #0a2642;">
+            <br><br><br><br><br><br>
+        </div>
+
+        <!-- Home Slider -->
+        <div class="home_slider_container">
+            <div class="owl-carousel owl-theme home_slider">
+
+                                <!-- Slide -->
+                <div class="slide">
+                    <div class="background_image" style="background-image:url(/s/images/Poster-2.jpg)"></div>
+                    <div class="home_container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="home_content">
+                                        <div class="home_title">
+                                            <h1>
+                                                <span>Fort Patiala</span>
+                                            </h1>
+                                        </div>
+                                        <div class="button button_1 home_button"><a href="#"><span>Know More<img src="{% static 'images/arrow_2.png' %}" alt=""></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Slide -->
+                <div class="slide">
+                    <div class="background_image col-sm-12" style="background-image:url(/s/images/Poster-1.jpg)"></div>
+                    <div class="home_container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="home_content">
+                                        <div class="home_title">
+                                            <h1>
+                                                <span></span>
+                                            </h1>
+                                        </div>
+                                        <div class="home_info_container">
+                                            <div class="home_info">
+                                                <ul class="d-flex flex-row align-items-center justify-content-start">
+                                                    <li>Wedding Bells</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="button button_1 home_button"><a href="#"><span>Know More<img src="{% static 'images/arrow_2.png' %}" alt=""></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Slide -->
+                <div class="slide">
+                    <div class="background_image" style="background-image:url(/s/images/Poster-3.jpg)"></div>
+                    <div class="home_container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="home_content">
+                                        <div class="home_info_container">
+                                            <div class="home_info">
+                                                <ul class="d-flex flex-row align-items-center justify-content-start">
+                                                    <li>Welcome to the Royal Palace of Patiala</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Home Slider Dots -->
+            <div class="home_slider_dots_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="home_slider_dots">
+                                <ul id="home_slider_custom_dots" class="home_slider_custom_dots d-flex flex-row align-items-start justify-content-start">
+                                    <li class="home_slider_custom_dot active">01.</li>
+                                    <li class="home_slider_custom_dot">02.</li>
+                                    <li class="home_slider_custom_dot">03.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Timer -->
+
+    <div class="timer_section">
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/timer.jpg' %}" data-speed="0.8"></div>
+        <div class="timer_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="timer_container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro -->
+
+    <div class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section_title_container text-center">
+                        <div class="section_title"><h1>The Best Royal Palace in Patiala</h1></div>
+                    </div>
+                    <div class="intro_text text-center">
+                        <p>Fort Patiala</p>
+                    </div>
+                    <div class="button button_2 intro_button"><a href="#"><span>Know More<img src="{% static 'images/arrow.png' %}" alt=""></span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs Section -->
+    
+    <!-- Speakers -->
+
+    <div class="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title_container text-center">
+                        <div class="section_subtitle">see what's all about</div>
+                        <div class="section_title"><h1>Images</h1></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row speakers_row">
+                
+                <!-- Speaker -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="speaker">
+                        <div class="speaker_image"><img src="{% static 'images/royal/1.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- Speaker -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="speaker">
+                        <div class="speaker_image"><img src="{% static 'images/royal/2.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- Speaker -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="speaker">
+                        <div class="speaker_image"><img src="{% static 'images/royal/3.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- Speaker -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="speaker">
+                        <div class="speaker_image"><img src="{% static 'images/royal/4.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- Speaker -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="speaker">
+                        <div class="speaker_image"><img src="{% static 'images/royal/5.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- Speaker -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="speaker">
+                        <div class="speaker_image"><img src="{% static 'images/royal/6.jpg' %}" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+
+    <div class="cta">
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/cta.jpg' %}" data-speed="0.8"></div>
+        <div class="cta_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cta_content text-center">
+                        <div class="cta_title text-center"><h1>Know More About Fort Patiala and Patiala's Royal History</h1></div>
+                        <div class="cta_text text-center">
+                            <p>
+                                Fort Patiala got Started in 20XX and is successfully managing and serving guest for the last XX Years.
+                            </p>
+                        </div>
+                        <div class="button button_3 cta_button"><a href="#"><span>Know More<img src="{% static 'images/arrow.png' %}" alt=""></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--========== END PAGE CONTENT ==========-->
+        {% endblock %}
+      {% endblock %}  
+{% include 'includes/_footer.html' %}
+
+</div>
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap-4.1.2/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.3.4/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/colorbox/jquery.colorbox-min.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/progressbar/progressbar.min.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>

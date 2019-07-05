@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ post.title }} &middot; {{ block.super }}{% endblock %}
+
+{% block breadcrumbs %}
+  {{ block.super }}
+  <li><a href="{% url 'blog:post-list' %}">Blog</a></li>
+  <li class="active">{{ post.title }}</li>
+{% endblock %}
+
+{% block content %}
+<!--project wrapper start here-->
+                        <section class="project_wrapper" style="background:none;">
+                            <div class="container">
+                                <div class="row">
+                                        
+                                      <!--projct description Start here-->
+                                         <div class="col-md-12 col-sm-12">
+                                            <img src="assets/img/testimonial_bg.jpg">
+                                         </div> 
+                                         
+                                         <div class="col-md-12 col-sm-12">   
+                                          <div class="col-md-3 col-sm-4">
+                                            <h2 class="post-title bold"><a href="#">{{ post.title }}</a></h2>
+                                            <p><span><a href="#">{{ post.published_date|date:"F j, Y" }}</a></span>
+                                             </p>
+                                         </div>
+                                               
+                                          <div class="col-md-9 col-sm-8">     
+                                             <h3>Description </h3>
+                                                 <p>{{ post.body|safe }}</p>
+     
+     </div>
+                                    </div>
+                                    <!--projct description End here-->
+                                    {% if post.tags.all %}
+      <div class="tags">
+        {% for tag in post.tags.all %}
+          <a href="{% url 'blog:post-list-by-tag' tag.slug %}" class="btn btn-info btn-xs">{{ tag.name }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+        
+                                    
+                                </div>
+                            </div>
+                        </section>
+                    <!--project wrapper End here-->
+
+
+{% endblock %}
